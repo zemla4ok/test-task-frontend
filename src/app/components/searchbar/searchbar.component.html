@@ -1,0 +1,13 @@
+<div>
+  <form [formGroup]="searchForm"
+        (ngSubmit)="(searchByKey(searchForm.value))">
+
+    <input type="text"
+           placeholder=""
+           formControlName="searchText"
+           required>
+
+    <input type="submit">
+  </form>
+  <div>{{resultText}}</div>
+</div>
